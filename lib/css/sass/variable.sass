@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,vietnamese,latin-ext);
+
+// Color
+$textColor: #222;
+$mainColor: #f17022;
+
+.mainColor
+	color: $mainColor;
+//Trasition 
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+
+a, a:hover
+	transitionDelay(500ms)
+	text-decoration: none;
+
+h4 
+	font-weight: 600;
+
+h3 
+	font-weight: 700;
+
+.noPadding 
+	padding: 0;
+
+.responsive-navbar 
+	li 
+		a 
+			&:hover, &:focus, &:visited, &:active 
+				background: none;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	background: none;
+
+.why-choice-qoute-title
+	font-size: 25px;
+
